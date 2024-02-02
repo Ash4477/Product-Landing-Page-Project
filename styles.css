@@ -1,0 +1,384 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+}
+
+#newsletter, #newsletter-block, #features, #products, #pricing{
+    overflow: hidden;
+}
+
+:root{
+    --theme-color: hsl(240, 73%, 16%);
+}
+
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header{
+        height: 25% !important;
+        align-items: center;
+    }
+    #nav-bar ul{
+        padding-bottom: 5px;
+        flex-direction: column !important;
+        align-items: flex-end !important;
+    }
+
+    main{
+        position: absolute;
+        top: 20% !important;
+        height: 80% !important;
+    }
+
+    #products{
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+        align-items: center !important;
+    }
+
+
+
+    #youtube-link-block, #newsletter-block{
+        height: auto !important; 
+    }
+
+    #submit, #email{
+        width: 85% !important;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        height: 30% !important;
+        flex-direction: column !important;
+    }
+
+    #nav-bar ul{
+        align-items: center !important;
+        padding-bottom: 10px;
+    }
+
+    #nav-bar li{
+        padding: 2px 0px;
+    }
+
+    main{
+        position: absolute;
+        top: 40% !important;
+        height: 40% !important;
+    }
+
+    footer{
+        top: 280% !important;
+    }
+
+    #youtube-link-block, #newsletter-block{
+        height: auto !important; 
+    }
+
+    #submit, #email{
+        width: 85% !important;
+        height: auto;
+    }
+}
+
+/* header stuff */
+
+header{
+    position: fixed;
+    width:100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--theme-color);
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+#header-img{
+    height: 15vh;
+}
+
+#header span{
+    display: flex;
+    align-items: center;
+}
+
+#header span h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#nav-bar{
+    height: 100%;
+    width: 60%;
+}
+
+#nav-bar ul{
+    width:100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-bar ul li{
+    margin: 0 2rem;
+}
+
+#nav-bar .nav-link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nav-bar .nav-link:hover{
+    color: hsl(0, 0%, 30%);
+    cursor: pointer;
+}
+
+/* main stuff */
+
+main{
+    position: absolute;
+    top: 15%;
+    width:100%;
+    height:85%;
+}
+
+/* newsletter section*/
+
+#newsletter{
+    margin: 20px;
+    padding-top: 20px;
+    height: 80%;
+}
+
+#newsletter-img{
+    width: 50%;
+    height: 100%;
+    border-radius: 3%;
+    float: right;
+    margin-right: 3%;
+}
+
+#newsletter-block{
+    background-color: var(--theme-color);
+    border-radius: 4%;
+    width: 40%;
+    height: 60%;
+    margin-left: 5%;
+}
+
+#newsletter-block h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#newsletter-block hr{
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+
+#email, #submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email{
+    width: 45%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    color: black !important;
+    width: 20%;
+}
+
+#newsletter-block p{
+    text-align: center;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#youtube-link-block{
+    background-color: var(--theme-color);
+    border-radius: 4%;
+    width: 40%;
+    height: 30%;
+    margin-left: 5%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+#youtube-link-block p{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30%;
+}
+
+#youtube-link-block a{
+    text-decoration: none;
+    color: hsl(240, 85%, 66%);
+}
+
+#youtube-link-block a:hover{
+    text-decoration: none;
+    color: hsl(240, 100%, 45%);
+}
+
+/* features section */
+
+#features{
+    border: 2px solid black;
+    border-radius:4%;;
+    background-color: var(--theme-color);
+    width: 70%;
+    margin: 0px auto;
+    padding: 40px 20px;
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+
+#star-icon, #delivery-icon, #quality-icon{
+    margin-right: 40px;
+}
+
+/* products section */
+
+#products{
+    position: relative;
+    top: 40%;
+    background-color: var(--theme-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.prod-video{
+    height: 315px;
+    width: 350px;
+}
+
+/* pricing section */
+
+#pricing{
+    background-color: var(--theme-color);
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.price-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    width: 30%;
+    height: 315px;
+}
+
+.price-box hr{
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#pb1{
+    background: linear-gradient(
+        135deg,
+        green,
+        blue
+    );
+}
+
+#pb2{
+    background: linear-gradient(
+        135deg,
+        black,
+        blue
+    );
+}
+
+#pb3{
+    background: linear-gradient(
+        135deg,
+        pink,
+        blue
+    );
+}
+
+.prod-label, .price-label{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.price-box button{
+    width: 40%;
+    height: 20%;
+    color: white;
+    background-color: var(--theme-color);
+    border-radius: 10%;
+    font-size: 1.3rem;
+}
+
+/* footer stuff */
+
+footer{
+    background-color: hsl(240, 41%, 28%);
+    display: block;
+    position: absolute;
+    top: 340%;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+footer ul{
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+}
+
+footer ul li{
+    padding-left: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+

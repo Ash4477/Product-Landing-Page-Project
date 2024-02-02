@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d2f89adc8d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="header">
+            <span>
+                <img id="header-img" src="https://media.istockphoto.com/id/1392379315/vector/painted-orange-headphones-on-a-blue-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=r_4NminR0RRxHJYCjqklZKoaF5eeVT8ICSi7h9sA7JY=" alt="Nexus Sound Logo" width="100"/>
+                <h2>Nexus Sound</h2>
+            </span>
+            <nav id="nav-bar">
+                <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="newsletter">
+                <img id="newsletter-img" src="https://images.unsplash.com/photo-1594434533760-02e0f3faaa68?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwd2l0aCUyMGhlYWRwaG9uZXN8ZW58MHx8MHx8fDA%3D" alt="guy with headphones on" loading="lazy">
+                
+                <div id="newsletter-block">
+                    <h1>Hear The Future Now</h1>
+                    <hr>
+                    <form method="post" id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input name="email" id="email" type="email" placeholder="Enter your email address" />
+                        <input id="submit" type="submit" value="Subscribe" href="https://www.freecodecamp.com/email-submit" />
+                    </form>
+                    <p>Subscribe to our newsletter for exclusive discounts and early news about our future products</p>
+                </div>
+                <div id="youtube-link-block">
+                    <p>Visit our <a href="https://www.youtube.com/@razer" target="_blank">youtube page</a> to browse through videos of our products</p>
+                </div>
+            </section>
+            <section id="features">
+                <div class="icon-label">
+                    <i id="star-icon" class="fa-regular fa-star"></i>
+                    <span>
+                    <h2>Premium Technology</h2>
+                    <p>Our products are made from latest and premium technology, ensuring longetivity and modern feel to them.</p>
+                    </span>
+                </div>
+                <div class="icon-label">
+                    <i id="delivery-icon" class="fa-duotone fa-truck"></i>
+                    <span>
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your product as soon as possible. We also provide free returns if you are not satisfied.</p>
+                    </span>
+                </div>
+                <div class="icon-label">
+                    <i id="quality-icon" class="fa-solid fa-battery-full"></i>
+                    <span>
+                    <h2>Quality Assurance</h2>
+                    <p>1 year warranty is given with our every product.</p>
+                    </span>
+                </div>
+            </section>
+            <section id="products">
+                <iframe id="video" class="prod-video" src="https://www.youtube.com/embed/IRB4He6wH-s" frameborder="0" allowfullscreen></iframe>
+                <iframe class="prod-video" src="https://www.youtube.com/embed/lPGENjqks_A" frameborder="0" allowfullscreen></iframe>
+                <iframe class="prod-video" src="https://www.youtube.com/embed/V7_diAdEq1U" frameborder="0" allowfullscreen></iframe>
+            </section>
+            <section id="pricing">
+                <div class="price-box" id="pb1">
+                    <label class="prod-label">Razer BlackShark</label>
+                    <hr>
+                    <label  class="price-label">$200</label>
+                    <button>Select</button>
+                </div>
+                <div class="price-box" id="pb2">
+                    <label class="prod-label">Razer Krakken</label>
+                    <hr>
+                    <label class="price-label">$350</label>
+                    <button>Select</button>
+                </div>
+                <div class="price-box" id="pb3">
+                    <label class="prod-label">Razer Kitty</label>
+                    <hr>
+                    <label class="price-label">$500</label>
+                    <button>Select</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            <span>Copyright 2020, Nexus Sound</span>
+        </footer>
+    </body>
+</html>
